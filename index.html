@@ -1,0 +1,368 @@
+<!DOCTYPE HTML>
+<head>
+<title>Home</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- layout and component -->
+<link rel="stylesheet" href="css/bootstrap.css" />
+<!-- animate -->
+<link rel="stylesheet" href="css/animate.css" />
+
+<!--=== Main Stylesheets ===-->
+<link rel="stylesheet" href="css/style.css" />
+
+<!-- font-css -->
+<link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+
+</head>
+<body>
+
+<section id="preloader">
+	<div class="loading-circle fa-spin"></div>
+</section>
+
+<div id="header" class="header-section">
+	<!-- sticky-bar Starts-->
+	<div class="sticky-bar-wrap">
+		<div class="sticky-section">
+			<div id="topbar-hold" class="nav-hold container">
+				<nav class="navbar" role="navigation">
+					<div class="navbar-header">
+						<a class="site-name navbar-brand" href="#"><span>P</span>rinted Play</a>
+					</div>
+					<div class="collapse navbar-collapse navbar-responsive-collapse">
+						<ul class="nav navbar-nav navbar-right">
+							<li class="current"><a href="#header">Home</a></li>
+							<li><a href="#step-2">About</a></li>
+							<li><a href="#section-video">Video</a></li>
+							<li><a href="#section-pricing">Gallery</a></li>
+							<li><a href="#section-services">Context</a></li>
+						</ul>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</div>
+
+	<div id="section-home" class="home-section-wrap center">
+		<div class="section-overlay"></div>
+		<div class="container home">
+			<div class="row">
+				<h1 class="well-come">Printed Play</h1>
+				<div class="col-md-8 col-md-offset-2">
+					<p class="intro-message">A visual timeline tracing how Mahjong’s printed form and graphic design shaped its evolution as both a game and a cultural artifact across East Asia.</p>
+					<div class="home-buttons">
+						<a href="./timeline.html" class="fancy-button button-line button-white vertical">
+							Enter Exhibition
+							<span class="icon">
+								<i class="fa fa-gear"></i>
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!--=== Step-2 section Starts ===-->
+<section id="step-2" class="section-step step-even step-wrap">
+	<div class="container step animated" data-animation="bounceInRight" data-animation-delay="1500">
+		<div class="row">
+			<div class="col-md-8 step-desc">
+				<div class="col-md-10 step-details">
+					<h3 class="step-title color-scheme">About</h3>
+					<p class="step-description">
+						This exhibition investigates Mahjong as a printed medium, a culturally coded symbol, and an interactive game interface. By engaging with a diverse range of historical and contemporary materials—including woodblock prints, offset manuals, zine formats, and digital reinterpretations—we examine how successive print technologies have shaped the visual language, material design, and regional aesthetics of Mahjong. Through this lens, the project highlights how the game has been continually reimagined and circulated across East Asia and beyond, embedding itself within broader trajectories of graphic reproduction, leisure culture, and transnational visual exchange.
+					</p>
+				</div>
+			</div>
+			<div class="col-md-4 step-img">
+				<img src="images/about.png" alt="Mahjong woodblock print" />
+			</div>
+		</div>
+	</div>
+</section>
+
+<!--=== Video section Starts ===-->
+<section id="section-video" class="section-video-wrap">
+  <div class="section-overlay"></div>
+  <div class="container big-video center animated" data-animation="fadeInLeft" data-animation-delay="700">
+    <div class="row">
+      <div class="col-md-12 section-title">
+        <h3>Watch a related documentary</h3>
+      </div>
+      <div class="col-md-10 col-md-offset-1 video-content" style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+        <iframe src="https://www.youtube.com/embed/GAtOPtFMSPc"
+                title="The Secret History of Mahjong"
+                frameborder="0"
+                allowfullscreen
+                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- layout and component -->
+  <link rel="stylesheet" href="css/bootstrap.css" />
+  <link rel="stylesheet" href="css/animate.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- font-css -->
+  <link href='http://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:300,700,400' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Raleway:600,400,300' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+  <style>
+    figure {
+      position: relative;
+      cursor: pointer;
+    }
+    figure .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.3);
+      z-index: 1;
+    }
+    figure .description {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.7);
+      color: white;
+      padding: 10px;
+      z-index: 2;
+      display: none;
+      max-height: 300px;
+      overflow-y: auto;
+    }
+    figure.active .description {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <section id="section-pricing" class="pricing-wrap">
+    <div class="container pricing">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1 center section-title">
+          <h3>Highlights</h3>
+        </div>
+
+        <!-- Image Block 1 -->
+        <div class="col-md-3 col-sm-6 single-pricing-wrap center">
+          <figure onclick="toggleDescription(this)">
+            <img src="images/a-1.png" alt="Mahjong wood tiles" class="gallery-image">
+            <div class="overlay"></div>
+            <figcaption class="description">
+              <strong>Title:</strong> Madiao<br>
+              <strong>Creator:</strong> Unknown<br>
+              <strong>Creation Date:</strong> 15th Century, Qing Dynasty<br>
+              <strong>Location:</strong> China<br>
+              <strong>Dimensions:</strong> Varies<br>
+              <strong>Type:</strong> Culture and Art/Game/Leisure<br>
+              <strong>Material:</strong> Wood, Paper, Bamboo<br><br>
+              <strong>Description:</strong><br>
+              Madiao is a traditional Chinese card game popular during the Qing Dynasty. It evolved into various regional versions, each with unique rules, and was especially favored by the elite and royal family. In 1691, Emperor Kangxi banned its production and trade due to concerns about class disparity, but it remained popular among high-ranking officials.
+
+Madiao influenced later card games, especially during the Ming Dynasty, and played a key role in the development of Mahjong in the 19th century. Its multi-deck, tile-based format helped shape Mahjong's design, making Madiao a cultural bridge in the evolution of Chinese games.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Image Block 2 -->
+        <div class="col-md-3 col-sm-6 single-pricing-wrap center">
+          <figure onclick="toggleDescription(this)">
+            <img src="images/a-2.png" alt="Colorful Inlaid Tiles" class="gallery-image">
+            <div class="overlay"></div>
+            <figcaption class="description">
+              <strong>Title:</strong> Colorful Inlaid Tiles (五彩螺鈿牌)<br>
+              <strong>Creator:</strong> Unknown<br>
+              <strong>Creation Date:</strong> Qing Dynasty<br>
+              <strong>Location:</strong> Mahjong Museum of Japan<br>
+              <strong>Dimensions:</strong> Varies<br>
+              <strong>Type:</strong> Culture and Art/Game/Leisure<br>
+              <strong>Material:</strong> Exotic Wood, Bone, Mother of Pearl
+			  <strong>Description:</strong><br>
+			  The "Colorful Inlaid Tiles" are an exquisite mahjong set from the Qing Dynasty, preserved in the Mahjong Museum of Japan. It includes two decks—larger tiles for men and smaller ones for women—reflecting both practical needs and gender roles in the imperial court.
+
+Made from rare woods and bone, the tiles feature detailed craftsmanship using now-lost techniques. Once used by the royal family, the set is admired today for its beauty, fine materials, and historical value, symbolizing the artistry and luxury of the Qing imperial era.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Image Block 3 -->
+        <div class="col-md-3 col-sm-6 single-pricing-wrap center">
+          <figure onclick="toggleDescription(this)">
+            <img src="images/a-3.png" alt="Mahjong Set (Game-piece)" class="gallery-image">
+            <div class="overlay"></div>
+            <figcaption class="description">
+              <strong>Title:</strong> Mahjong Set (Game-piece)<br>
+              <strong>Creator:</strong> Chinese Peoples<br>
+              <strong>Creation Date:</strong> Unknown<br>
+              <strong>Location:</strong> The British Museum (Not on display)<br>
+              <strong>Dimensions:</strong> Height: 2.5 cm, Width: 1.9 cm, Depth: 1.3 cm, Weight: 6 g (each tile)<br>
+              <strong>Type:</strong> Culture and Art/Game/Leisure<br>
+              <strong>Material:</strong> Bone, Bamboo, Pigment<br>
+              <strong>Technique:</strong> Pigmented<br><br>
+              <strong>Description:</strong><br>
+              This bone-and-bamboo mahjong set, hand-painted with pigments, reflects early Chinese craftsmanship and design. The tiles show a balance of function and decoration, capturing a transitional moment in mahjong’s visual development.
+
+Unlike modern printed sets, the hand-drawn characters—like “Wan,” “Tong,” and “Suo”—have visible brushstrokes and regional style, giving each tile a unique, artisanal feel. The set was featured in the China: Journey to the East exhibition (2009–2010) in the UK, highlighting its cultural and historical value as an example of traditional Chinese leisure and evolving mahjong iconography.
+            </figcaption>
+          </figure>
+        </div>
+
+        <!-- Image Block 4 -->
+        <div class="col-md-3 col-sm-6 single-pricing-wrap center">
+          <figure onclick="toggleDescription(this)">
+            <img src="images/a-4.jpg" alt="Modern Printed Mahjong Set" class="gallery-image">
+            <div class="overlay"></div>
+            <figcaption class="description">
+              <strong>Title:</strong> Modern Printed Mahjong Set<br>
+              <strong>Creator:</strong> Unknown<br>
+              <strong>Creation Date:</strong> Contemporary<br>
+              <strong>Location:</strong> —<br>
+              <strong>Dimensions:</strong> Standard size (varies)<br>
+              <strong>Type:</strong> Culture and Art/Game/Leisure<br>
+              <strong>Material:</strong> Plastic<br>
+              <strong>Technique:</strong> Machine-printed<br><br>
+              <strong>Description:</strong><br>
+              This modern mahjong set is made of plastic and mass-produced using industrial printing. Unlike handcrafted bone-and-bamboo sets, it features uniform, machine-printed designs for clarity and ease of use.
+
+The tiles retain traditional symbols like “Wan,” “Tong,” and “Suo,” but are now digitally designed and mechanically applied. While it lacks artisanal detail, the set reflects the game’s lasting popularity and its adaptation to modern, everyday life.
+            </figcaption>
+          </figure>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function toggleDescription(figure) {
+      document.querySelectorAll('figure').forEach(el => {
+        if (el !== figure) el.classList.remove('active');
+      });
+      figure.classList.toggle('active');
+    }
+  </script>
+</body>
+</html>
+
+
+
+
+
+<!--=== Identity section Starts ===-->
+<section id="section-subscribe" class="subscribe-wrap">
+    <div class="section-overlay"></div>
+    <div class="container subscribe center">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="col-md-10 col-md-offset-1 center section-title">
+                    <h3>Mahjong’s Evolution as a Visual and Cultural Object</h3>
+                </div>
+                <div id="subscription-form">
+                    <p style="color: white;">
+                        <span class="highlighted-text">From inked tiles to digital reinterpretations</span>, Mahjong’s material evolution highlights the pivotal role printed forms have played in transforming traditional leisure into a dynamic visual language. This project examines how Mahjong bridges visual culture, design, and gaming, illustrating how the printed medium facilitates the mediation of interaction, identity, and cultural memory across time and space.
+                    </p>
+                    <div class="button-container">
+                        <button onclick="window.location.href='./timeline.html'" id="subscription-btn" class="fancy-button button-line button-white large zoom">
+                            Enter Exhibition
+                            <span class="icon">
+                                <i class="fa fa-sign-in"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--=== Identity section Ends ===-->
+
+
+
+
+<!--=== Context section Starts ===-->
+<section id="section-services" class="services-wrap">
+  <div class="container services">
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1 center section-title">
+        <h3>Key Themes</h3>
+      </div>
+
+      <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInLeft" data-animation-delay="700">
+        <span class="service-icon center"><i class="icon icon-basic-book-pencil fa-3x"></i></span>
+        <div class="service-desc">
+          <h4 class="service-title color-scheme">Print as Transmission</h4>
+          <p class="service-description justify">
+            Printed Mahjong sets, rule books, and promotional materials played a pivotal role in the game’s widespread dissemination across social classes and national borders. These printed forms served not only as vehicles for gameplay but also as cultural carriers, transforming Mahjong from a localized pastime into a transnational symbol.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="700">
+        <span class="service-icon center"><i class="icon icon-basic-paperplane fa-3x"></i></span>
+        <div class="service-desc">
+          <h4 class="service-title color-scheme">Design and Playability</h4>
+          <p class="service-description justify">
+            Each era and region’s interpretation of Mahjong is shaped through its unique graphic design and physical form. These design choices—ranging from tile artwork to game packaging—profoundly affect both the mechanics of the game and its cultural perception, reinforcing its role as a socially embedded and visually distinctive object.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInRight" data-animation-delay="700">
+        <span class="service-icon center"><i class="icon icon-basic-accelerator fa-3x"></i></span>
+        <div class="service-desc">
+          <h4 class="service-title color-scheme">Global Circulation</h4>
+          <p class="service-description justify">
+            Mahjong has traveled far beyond its origins, from Shanghai to San Francisco, carried by printed rulebooks, mass-produced sets, and repackaged versions. As Mahjong crosses cultural and geographical boundaries, it undergoes transformations that reflect not only regional aesthetics but also the ongoing exchange of cultural memory and social practice.
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 col-sm-6 service animated" data-animation="fadeInUp" data-animation-delay="700">
+        <span class="service-icon center"><i class="icon icon-basic-lightbulb fa-3x"></i></span>
+        <div class="service-desc">
+          <h4 class="service-title color-scheme">Visual Identity</h4>
+          <p class="service-description justify">
+            Mahjong’s evolving iconography, from dragons to abstract geometric patterns, reflects broader shifts in cultural aesthetics and the political dynamics of play. These visual elements capture the game’s transformation from a traditional leisure activity to a symbol of modern identity, continually reshaped by the intersections of cultural politics, print technologies, and regional styles.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!--=== Context section Ends ===-->
+
+
+<!--==== Js files ====-->
+<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/jquery.baraja.js"></script>
+<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+
+</body>
+</html>
